@@ -63,12 +63,13 @@
  [validators record]
  (reduce
   (fn
-   [is-valid vamp-key
-    (and
-     is-valid
-     (not-nil? (get record vamp-key))
-     ((get validators vamp-key) (get record vamp-key)))])
+   [is-valid vamp-key] (and is-valid (not-nil? (get record vamp-key)) ((get validators vamp-key) (get record vamp-key))))
   true
   vamp-keys))
 
-(defn -main [& args] (clojure.pprint/pprint (glitter-filter 3 (mapify (parse (slurp filename))))))
+(defn to-csv
+  "The answer for exercise 4"
+  [folks]
+  (clojure.string/join "\n" (map #(clojure.string/join "," [(:name %) (:glitter-index %)]) folks)))
+
+(defn -main [& args] (clojure.pprint/pprint (mapify (parse (slurp filename)))))
