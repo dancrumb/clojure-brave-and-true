@@ -1,36 +1,15 @@
 # clojure-brave-and-true
 
-FIXME: description
+I'm learning Clojure via ["Clojure for the Brave and True"](http://www.braveclojure.com/).
 
-## Installation
+This repo contains my efforts.
 
-Download from http://example.com/FIXME.
+I'm trying to keep `project.clj` up to date so that `lein run` runs the most recent
+Chapter and Exercise. Yeah... I'm also using [Leiningen](http://leiningen.org/).
 
-## Usage
+I fully expect my early `chapterX.clj` to somewhat be in disarray - this language
+is really turning back the clock for me as most of my past experience doesn't
+really apply - my basic understand of good formatting and good code organization
+just don't fit.
 
-FIXME: explanation
-
-    $ java -jar clojure-brave-and-true-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Things will get better, I'm sure :)
