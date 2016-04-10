@@ -4,6 +4,6 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]]
-  :main ^:skip-aot clojure-brave-and-true.chapter5
+  :main ^:skip-aot clojure-brave-and-true.chapter7
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
