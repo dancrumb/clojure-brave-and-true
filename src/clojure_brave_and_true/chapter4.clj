@@ -73,3 +73,5 @@
   (clojure.string/join "\n" (map #(clojure.string/join "," [(:name %) (:glitter-index %)]) folks)))
 
 (defn -main [& args] (clojure.pprint/pprint (mapify (parse (slurp filename)))))
+
+(mapify (parse (slurp filename)))
