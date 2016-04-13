@@ -19,15 +19,12 @@
 
 (defn build-operations
   [operators operands done? when-done]
-  (loop [operators operators
-         operands operands]
-    (if (done? operators operands)
-      (when-done operators operands)
-      (let [[operator operators] (pop operators)
-            [rightOperand operands] (pop operands)
-            [leftOperand operands] (pop operands)]
-        (recur operators (push operands (list operator leftOperand rightOperand)))
-        )
+  (if (done? operators operands)
+    (when-done operators operands)
+    (let [[operator operators] (pop operators)
+          [rightOperand operands] (pop operands)
+          [leftOperand operands] (pop operands)]
+      (recur operators (push operands (list operator leftOperand rightOperand)) done? when-done)
       )
     )
   )
